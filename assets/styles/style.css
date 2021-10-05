@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&family=Tinos&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.covid-banner{
+    width: 100%;
+    background-color: #F2F2F2;
+    position: relative;
+    top: 0;
+    text-align: center;
+}
+.normalized{
+    color: blue;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header__icons{
+    width: 100%;
+    height: 27px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.icons__itm{
+    cursor: pointer;
+}
+.icons__itm[alt="Like"]{
+    margin: 10px 14px 0 9px;
+}
+.icons__itm[alt="Buy"]{
+    margin: 5px 0 0 5px;
+}
+.icons__itm[alt="Search"]{
+    margin: 4px 0 2px 0;
+}
+.hamburger__button{
+    display: none;
+}
+.header__logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 286px;
+}
+.header__logo-img{
+    margin-bottom: 8px;
+}
+.header__nav{
+    margin-top: 20px;
+    width: calc(100% - 115px);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.header__link{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+}
+.heading{
+    font-family: 'Tinos', serif;
+    font-size: 36px;
+    line-height: 40px;  
+}
+.curations{
+    margin: 39px 0 11px 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+.curations__heading{
+    margin-top: 40px;
+    width: 839px;
+    font-size: 61px;
+    line-height: 63px;
+}
+.curation__description{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    width: 624px;
+    margin: 27px 0 58px 0;
+}
+.upcomig-curations{
+    height: 119px;
+    align-items: center;
+    background-image: url(../../media/upcomig-curations-bg.png);
+    background-attachment: cover;
+    background-position: center;
+}
+.curation-slider{
+    margin-top: 17px;
+    background-color: #F4BAB5;
+    height: 518px;
+    position: relative;
+}
+.slider-itm{
+    position: relative;
+    width: 100%;
+    height: 518px;
+}
+.curation-slider__avatar-bg{
+    position: absolute;
+    width: 451.11px;
+    height: 451.12px;
+    left: -12px;
+    top: 12.4px;
+}
+.live-button{
+    position: absolute;
+    cursor: pointer;
+    left: 126px;
+    bottom: 71px;
+    width: 156px;
+    height: 22px;
+    font-size: 11px;
+    background: none;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    padding-left: 45px;
+}
+.live-button:before{
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #B3F695;
+    border-radius: 50%;
+}
+.curation-slider__avatar-photo{
+    position: absolute;
+    width: 215px;
+    height: 215px;
+    left: 94px;
+    top: 133px;
+}
+.slick-dots{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 17px;
+}
+.slick-dots li{
+    width: 9px;
+    height: 9px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 4px;
+}
+.slick-dots li:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 9px;
+    height: 9px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+.slick-dots .slick-active::after{
+    background-color: black;
+}
+.slider-itm__header{
+    position: absolute;
+    top: 109px;
+    right: 222px;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 37px;
+}
+.slider-itm__name{
+    font-family: 'Tinos', serif;
+    font-size: 61px;
+    line-height: 63px;
+    position: absolute;
+    top: 163px;
+    right: 78px;
+}
+.slider-itm__paragraph{
+    width: 311px;
+    position: absolute;
+    top: 250px;
+    right: 170px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+}
+.slider-itm__rsvp{
+    cursor: pointer;
+    position: absolute;
+    width: 190px;
+    height: 34px;
+    right: 231px;
+    top: 393px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid #000000;
+    background: none;
+    box-sizing: border-box;
+}
+.curation-cards{
+    position: relative;
+    top: 52px;
+    height: 1383px;
+    width: 100%;
+}
+.cards-itm, .cards-itm__avatar, .cards-itm__bg-figure{
+    position: absolute;
+}
+.cards-itm{
+    background-image: url("../../media/c83d8fae0bd7d964970e9e5ff3f129c3.png");
+}
+.cards-itm:before{
+    content: '';
+    z-index: -1;
+    position: absolute;
+}
+.cards-itm:after{
+    position: absolute;
+    z-index: 10;
+}
+.cards-itm__name{
+    font-family: 'Tinos', serif;
+    font-size: 36px;
+    position: absolute;
+}
+.cards-itm[data="Ekaterina Popova"]{
+    top: 109px;
+    left: 123px;
+    width: 160px;
+    height: 194px;
+}
+.cards-itm[data="Ekaterina Popova"]:before{
+    content: url("../../media/Triangle.png");
+    left: -38.02px;
+    bottom: 54.7px;
+}
+.cards-itm[data="Ekaterina Popova"]:after{
+    left: -71px;
+    top: -41px;
+    content: url("../../media/Group\ 170.png");
+}
+.cards-itm[data="Ekaterina Popova"] .cards-itm__avatar{
+    width: 141px;
+    height: 154px;
+    top: 11px;
+    left: 10px;
+}
+.cards-itm[data="Ekaterina Popova"] .cards-itm__name{
+    bottom: -49px;
+    left: -44px;
+}
+
+.cards-itm[data="Nick Pinsker"]{
+    top: 109px;
+    left: 441px;
+    width: 161px;
+    height: 195px;   
+}
+.cards-itm[data="Nick Pinsker"]:before{
+    width: 223px;
+    height: 112px;
+    left: -25.5px;
+    top: 45.5px;
+    border-radius: 0 56px 56px 0;
+    background-color: #F2CF26;
+}
+.cards-itm[data="Nick Pinsker"] .cards-itm__avatar{
+    width: 140px;
+    height: 163px;
+    top: 9px;
+    left: 10px;
+}
+.cards-itm[data="Nick Pinsker"] .cards-itm__name{
+    bottom: -49px;
+    left: -9px;
+}
+
+.cards-itm[data="Lauren Mazzei"]{
+    top: 107px;
+    left: 766px;
+    width: 161px;
+    height: 195px;  
+}
+.cards-itm[data="Lauren Mazzei"]:before{
+    width: 148px;
+    height: 148px;
+    right: -57px;
+    top: -24px;
+    border-radius: 50%;
+    background: #F4BAB5;
+}
+.cards-itm[data="Lauren Mazzei"]:after{
+    width: 106px;
+    height: 112px;
+    right: -76px;
+    top: -70px;
+    content: url("../../media/Group\ 404.png");
+}
+.cards-itm[data="Lauren Mazzei"] .cards-itm__avatar{
+    top: 9px;
+    left: 11px;
+    width: 139px;
+    height: 158px;
+}
+.cards-itm[data="Lauren Mazzei"] .cards-itm__name{
+    bottom: -49px;
+    left: -30px;
+}
+
+.cards-itm[data="Emily Kammeyer"]{
+    top: 403px;
+    left: 115px;
+    width: 161px;
+    height: 195px;   
+}
+.cards-itm[data="Emily Kammeyer"]:before{
+    width: 267.4px;
+    height: 63.7px;
+    left: -81.7px;
+    top: 42px;
+    border-radius: 31.85px;
+    background: #154938;
+    transform: rotate(-45deg);
+}
+.cards-itm[data="Emily Kammeyer"] .cards-itm__avatar{
+    top: 8px;
+    left: 11px;
+    width: 142px;
+    height: 160px;
+}
+.cards-itm[data="Emily Kammeyer"] .cards-itm__name{
+    bottom: -41px;
+    left: -41px;
+}
+
+.cards-itm[data="Sarah Potter"]{
+    top: 384px;
+    left: 441px;
+    width: 161px;
+    height: 195px;
+}
+.cards-itm[data="Sarah Potter"]:before{
+    content: url('../../media/Star.png');
+    width: 171px;
+    height: 171px;
+    right: -91.2px;
+    bottom: -48.22px;
+}
+.cards-itm[data="Sarah Potter"]:after{
+    content: url("../../media/Group\ 2955.png");
+    left: -104px;
+    top: -15px;
+}
+.cards-itm[data="Sarah Potter"] .cards-itm__avatar{
+    top: 9px;
+    left: 10px;
+    width: 140px;
+    height: 159px;
+}
+.cards-itm[data="Sarah Potter"] .cards-itm__name{
+    bottom: -52px;
+    left: -1px;
+}
+
+.cards-itm[data="Caleb Thill"]{
+    width: 161px;
+    height: 195px;
+    left: 762px;
+    top: 404px;
+}
+.cards-itm[data="Caleb Thill"]:before{
+    content: url("../../media/Polygon.png");
+    right: -43.4px;
+    top: -46.48px;
+}
+.cards-itm[data="Caleb Thill"] .cards-itm__avatar{
+    width: 137px;
+    height: 153px;
+    top: 10px;
+    left: 11px;
+}
+.cards-itm[data="Caleb Thill"] .cards-itm__name{
+    bottom: -42px;
+}
+
+.cards-itm[data="Ekaterina Popova2"]{
+    top: 741px;
+    left: 123px;
+    width: 160px;
+    height: 194px;
+}
+.cards-itm[data="Ekaterina Popova2"]:before{
+    width: 148px;
+    height: 148px;
+    background-color: #C9CFDA;
+    border-radius: 50%;
+    left: -51px;
+    top: -32px;
+}
+.cards-itm[data="Ekaterina Popova2"]:after{
+    content: url('../../media/Group\ 100.png');
+    left: -71px;
+    top: -52px;
+}
+.cards-itm[data="Ekaterina Popova2"] .cards-itm__avatar{
+    width: 141px;
+    height: 154px;
+    top: 11px;
+    left: 10px;
+}
+.cards-itm[data="Ekaterina Popova2"] .cards-itm__name{
+    bottom: -45px;
+    left: -44px;
+}
+
+.cards-itm[data="Nick Pinsker2"]{
+    top: 741px;
+    left: 441px;
+    width: 161px;
+    height: 195px;
+}
+.cards-itm[data="Nick Pinsker2"]:before{
+    height: 63.7px;
+    width: 267.4px;
+    border-radius: 31.85px;
+    background-color: #82A08B;
+    top: 31.38px;
+    left: -63.39px;
+    transform: rotate(-41deg);
+}
+.cards-itm[data="Nick Pinsker2"] .cards-itm__avatar{
+    width: 140px;
+    height: 163px;
+    left: 10px;
+    top: 9px;
+}
+.cards-itm[data="Nick Pinsker2"] .cards-itm__name{
+    bottom: -50px;
+    left: -8px;
+}
+
+.cards-itm[data="Lauren Mazzei2"]{
+    top: 739px;
+    left: 766px;
+    width: 161px;
+    height: 195px;
+}
+.cards-itm[data="Lauren Mazzei2"]:before{
+    content: url('../../media/Star2.png');
+    right: -84.22px;
+    top: -72.22px;
+}
+.cards-itm[data="Lauren Mazzei2"] .cards-itm__avatar{
+    width: 139px;
+    height: 158px;
+    top: 9px;
+    left: 11px;
+}
+.cards-itm[data="Lauren Mazzei2"] .cards-itm__name{
+    bottom: -50px;
+    left: -30px;
+}
+
+.cards-itm[data="Emily Kammeyer2"]{
+    top: 1033px;
+    left: 115px;
+    width: 161px;
+    height: 195px;
+}
+.cards-itm[data="Emily Kammeyer2"]:before{
+    content: url('../../media/Polygon1.png');
+    left: -59px;
+    top: 22px;
+}
+.cards-itm[data="Emily Kammeyer2"] .cards-itm__avatar{
+    width: 142px;
+    height: 160px;
+    top: 8px;
+    left: 11px;
+}
+.cards-itm[data="Emily Kammeyer2"] .cards-itm__name{
+    left: -43px;
+    bottom: -47px;
+}
+
+.cards-itm[data="Sarah Potter2"]{
+    top: 1020px;
+    left: 441px;
+    width: 161px;
+    height: 195px;
+}
+.cards-itm[data="Sarah Potter2"]:before{
+    width: 223px;
+    height: 112px;
+    left: -22.5px;
+    top: 47.5px;
+    border-radius: 0 56px 56px 0;
+    background-color: #FC8750;
+}
+.cards-itm[data="Sarah Potter2"]::after{
+    content: url('../../media/Group\ 87.png');
+    right: -81px;
+    top: -12px;
+}
+.cards-itm[data="Sarah Potter2"] .cards-itm__avatar{
+    width: 140px;
+    height: 159px;
+    left: 10px;
+    top: 9px;
+}
+.cards-itm[data="Sarah Potter2"] .cards-itm__name{
+    left: -3px;
+    bottom: -62px;   
+}
+
+.cards-itm[data="Caleb Thill2"]{
+    top: 1040px;
+    left: 762px;
+    width: 161px;
+    height: 195px;
+}
+.cards-itm[data="Caleb Thill2"]:before{
+    content: url('../../media/Triangle1.png');
+    right: -69.97px;
+    top: -29.97px;
+}
+.cards-itm[data="Caleb Thill2"] .cards-itm__avatar{
+    width: 137px;
+    height: 153px;
+    top: 10px;
+    left: 12px;
+}
+.cards-itm[data="Caleb Thill2"] .cards-itm__name{
+    bottom: -45px;
+    left: -4px;
+}
+
+.footer{
+    width: 100%;
+    height: 246px;
+    background-color: rgba(242,242,242);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer__nav{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.footer__col{
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__heading{
+    font-size: 11px;
+    line-height: 17px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.footer__link{
+    width: 100%;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 17px;
+    font-weight: normal;
+}
+.footer__search{
+    width: 25%;
+}
+.search__text{
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 17px;
+}
+.search__input{
+    border: none;
+    border-bottom: 1px solid #000;
+    background: none;
+}
+.search__input::placeholder{
+    font-size: 11px;
+    line-height: 17px;
+    color: #9F9C9C;
+}
